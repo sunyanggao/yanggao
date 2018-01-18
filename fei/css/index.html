@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>聚宝理财</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <link rel="stylesheet" type="text/css" href="css/jubao.css">
+</head>
+<body class="jb-index">
+    <div class="i-topban">
+        <p class="i-title">聚宝 <span>肺坚强1号</span></p>
+        <p class="i-title-tip">
+            <span>
+                30天保本保息
+            </span>
+        </p>
+        <p class="i-interest">
+            <span class="i-dot-1">5</span>
+            <span class="i-dot-2">%</span>
+            <span class="i-dot-3">+</span>
+            <span class="i-dot-4">
+                <i></i>
+                雾霾补贴
+            </span>
+        </p>
+        <p class="i-good-tip">
+            没有好空气 · 也要有好心情
+        </p>
+        <p class="i-high">
+            最高年化收益可达<span>12</span>%
+        </p>
+    </div>
+    <div class="i-content">
+        <a class="i-btn icon i-ready" href="javascript:;">
+        </a>
+        <div class="bg">
+            <span>宏信证券发行产品</span>
+        </div>
+        
+    </div>
+    <footer class="footer">
+        <ul>
+            <li>
+                <i class="icon jbqg"></i>
+                <a href="index.html">聚宝抢购</a>
+            </li>
+            <li>
+                 <i class="icon phb"></i>
+                <a href="onelevel.html">排行榜</a>
+            </li>
+            <li>
+                <i class="icon my"></i>
+                <a href="javascript:;">我的</a>
+            </li>
+            <li>
+                <i class="icon zc"></i>
+                <a href="javascript:;">资产</a>
+            </li>
+            <li>
+                 <i class="icon car"></i>
+                <a href="javascript:;">购物车</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript">
+    function setRem(){
+        var clientWidth=$(window).width();
+        var nowRem=(clientWidth*100/414);
+        $("html").css("font-size",nowRem+"px");
+    }
+    setRem()
+    $(function(){
+        var timer;
+       $(window).bind("resize",function(){
+            clearTimeout(timer)
+            timer=setTimeout(function(){
+                setRem();
+            }, 300)
+       })
+    })
+</script>
+</html>

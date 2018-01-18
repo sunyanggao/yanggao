@@ -1,0 +1,328 @@
+@charset "utf-8";
+html{
+	font-size: 100px;
+}
+/*reset*/
+body {font-family: '微软雅黑'，"Helvetica Neue",Helvetica,STHeiTi,Arial,sans-serif;
+ margin: 0; padding: 0; -webkit-user-select: none;
+-webkit-text-size-adjust: none; outline: none; -webkit-tap-highlight-color: transparent;
+min-width: 320px;}
+input, textarea { -webkit-user-select: text;outline: none;}
+textarea::-webkit-resizer{display: none}
+input[type="number"]::-webkit-inner-spin-button{-webkit-appearance: none;}
+section, nav, article, aside, hgroup, header, footer { display: block }
+input, textarea, select, button, table { font-size: inherit; font-family: inherit; line-height: inherit }
+body, div, h2, h4, ul, li, dl, dt, dd, p { margin: 0; padding: 0 }
+img { border: none }
+ul, ol, li { list-style: none }
+i, em { font-style: normal }
+a { color: inherit; text-decoration: none }
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+display: block; }
+
+/*
+40*1.15/3/100:;
+	40px  0.153rem
+	36px  0.138rem;
+*/
+
+/*common*/
+.icon{
+	background: url(../img/jubao-icon.png);
+	background-size: 2.3rem auto;
+}
+.footer{
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	height: 0.575rem;
+	width: 100%;
+	background: #d50030;
+	overflow: hidden;
+	color: #fff;
+	font-size: 0.13rem;
+}
+.footer li{
+	width: 20%;
+	height: 0.445rem;
+	padding-top: 0.1rem;
+	float: left;
+	text-align: center;
+}
+.footer li i{
+	display: inline-block;
+	width: 0.245rem;
+	height: 0.245rem;
+}
+.footer li a{
+	display: block;
+	text-align: center;
+	position: relative;
+	top: -0.05rem;
+}
+.footer li .jbqg{
+	background-position: -0.4715rem 0;
+}
+.footer li .phb{
+	background-position: -0.83rem 0;
+}
+.footer li .my{
+	background-position: -1.166rem 0;
+}
+.footer li .zc{
+	background-position: -1.495rem 0;
+}
+.footer li .car{
+	background-position: -1.78rem 0;
+}
+
+/*首页*/
+.jb-index{
+	font-size:0.2rem;
+	padding-bottom: 0.575rem;
+	background: #efeae7;
+}
+.i-topban{
+    width: 100%;
+    height: 4.59rem;
+    background: url(../img/topban.jpg) no-repeat;
+    background-size: cover;
+}
+.i-topban p{
+	text-align: center;
+}
+.i-title{
+	font-size: 0.23rem;
+	padding-top: 0.437rem;
+	font-weight: bold;
+	color: #333;
+}
+.i-title span{
+	color: #f6384c;
+}
+.i-title-tip span{
+	display: inline-block;
+	height: 0.175rem;
+	line-height: 0.175rem;
+	font-size: 0.13rem;
+	padding: 0 0.17rem;
+	background: #f00;
+	color: #fff;
+}
+.i-interest{
+	font-size: 0;
+	color: #fe2c42;
+}
+.i-dot-1{
+	font-size: 0.82rem;
+}
+.i-dot-2,.i-dot-3{
+	font-size: 0.42rem;
+}
+.i-dot-3{
+	position: relative;
+	top: -0.2rem;
+	color: #ee4d5e;
+}
+.i-dot-4{
+	display: inline-block;
+	width: 1.7rem;
+	height: 0.495rem;
+	line-height: 0.495rem;
+	font-size: 0.174rem;
+	background: #fb6272;
+	color: #fff;
+	position: relative;
+	top: -0.25rem;
+}
+.i-dot-4 i{
+	display: inline-block;
+	height: 0.295rem;
+	width: 0.395rem;
+	background: url(../img/jubao-icon.png) no-repeat left center;
+	background-size: 2.3rem auto;
+	background-position: 0 0;
+	margin-right: 2px;
+	position: relative;
+	top: 0.05rem;
+}
+.i-good-tip{
+	color: #13631e;
+	font-size: 0.15rem;
+	font-weight: bold;
+}
+.i-high{
+	font-size: 0.184rem;
+	color: #f00;
+	font-weight: bold;
+}
+.i-high span{
+	font-size: 0.383rem;
+}
+.i-content{
+	height: 1.472rem;
+	background: #efeae7;
+	position: relative;
+}
+.i-btn{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	-webkit-transform:translate3D(-50%,0,0);
+	        transform:translate3D(-50%,0,0);
+	width: 1.388rem;
+	height: 1.388rem;
+	margin-top: -0.7rem;
+
+}
+.i-no{
+	background-position: 0 -0.414rem;
+}
+.i-buy{
+	background-position: 0 -1.82rem;
+}
+.i-ready{
+	background-position: 0 -3.24rem;
+}
+.i-content .bg{
+	position: absolute;
+	width: 90%;
+	margin-left:5%;
+	left: 0;
+	bottom: 0.2rem;
+	height:0px;
+	border-top: 1px dashed #c4c1bf;
+	border-bottom:1px dashed #fff;
+}
+.i-content .bg span{
+	position: absolute;
+	left: 50%;
+	-webkit-transform:translate3D(-50%,0,0);
+	        transform:translate3D(-50%,0,0);
+	padding: 0.115rem;
+	bottom: -0.2rem;
+	background: #efeae7;
+	font-size: 0.115rem;
+	color: #888;
+}
+/*产品一级目录*/
+.one-level{
+	font-size: 0.138rem;
+	padding-bottom: 0.575rem;
+}
+.one-level .one-list li:nth-child(even){
+	background: #fafafa;
+}
+.one-title{
+	font-size: 0.153rem;
+	height: 0.383rem;
+	line-height:0.383rem;
+	color: #444;
+	border-bottom: 1px solid #d7d7d7;
+	padding:0 0.153rem;
+}
+.one-title span{
+	font-size: 0.138rem;
+	color: #888;
+	float: right;
+}
+
+.one-box{
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      height: 1.518rem;/*老版本语法*/
+  	 -webkit-align-items: center;/*新版本语法*/
+  	 -ms-flex-align: center;
+  	 align-items: center;
+  	 	padding:0 0.153rem;
+  		box-sizing:border-box;
+  		border-bottom: 1px solid #d7d7d7;
+}
+.one-box .content{
+	-webkit-box: 1;
+	-webkit-box-flex: 1;
+	-webkit-flex:1;
+	height: 0.989rem;
+}
+.one-box .content .title{
+	font-size: 0.2rem;
+	font-weight: bold;
+	color: #666;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	word-break:keep-all;
+	white-space:nowrap;
+}
+.one-box .content .titletip{
+	font-size: 0.077rem;
+	color: #888;
+	overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.one-box .content .mc{
+	display: inline-block;
+	margin-top: 5px;
+	font-size: 0.138rem;
+	padding: 0.05rem 0.13rem;
+	background: #d50030;
+	color: #fff;
+}
+.one-box .img{
+	width: 1.15rem;
+}
+.one-box .tip{
+
+}
+.one-box .tip span{
+	display: inline-block;
+	text-align: center;
+	font-size: 0.153rem;
+	width: 0.95rem;
+	height: 0.95rem;
+	line-height:0.95rem;
+	background-position:-0.088rem -4.82rem;
+	color: #d50030;
+	font-weight:bold;
+
+}
+.one-box .tip span i{
+	font-size: 0.276rem;
+}
+.one-box .img img{
+	display: block;
+	height:0.993rem;
+	width:0.993rem;
+}
+.one-tip{
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      font-size: 0.138rem;
+      color: #666;
+      height: 0.422rem;
+      line-height: 0.422rem;
+}
+.one-tip span{
+		display: block;
+		-webkit-box: 1;
+		-webkit-box-flex: 1;
+		-webkit-flex:1;
+		text-align: center;
+		position: relative;
+}
+.one-tip span:nth-child(-n+2)::after{
+	display: block;
+	content: "";
+	height: 50%;
+	width: 0px;
+	border-left: 1px solid #cbcbcb;
+	position: absolute;
+	top: 25%;
+	right: 0px;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title></title>
+    <link rel="stylesheet" href="css/wode.css"/>
+</head>
+<body>
+    <div class="a">
+        <p class="one">聚宝 <span>肺坚强1号</span></p>
+        <p class="two">
+            <span class="two">30天保本保息</span>
+        </p>
+        <p class="three">
+            <span>5</span>
+            <span>%</span>
+            <span>+</span>
+            <span>
+                <span class="wu"></span>
+                雾霾补贴
+            </span>
+        </p>
+        <p class="four">没有好空气·也要有好心情</p>
+        <p class="five">最高年化收益可达 <span>12</span>%</p>
+
+    </div>
+
+    <div class="b">
+    </div>
+    <div class="c">
+        <div></div>
+        <span>宏信证券发行产品</span>
+    </div>
+    <div class="d">
+        <div>
+            <div class="o ao"></div>
+            <a href="">聚宝抢购</a>
+        </div>
+        <div>
+            <div class="o bo"></div>
+            <a href="">排行榜</a>
+        </div>
+        <div>
+            <div class="o co"></div>
+            <a href="">我的</a>
+        </div>
+        <div>
+            <div class="o do"></div>
+            <a href="">资产</a>
+        </div>
+        <div>
+            <div class="o eo"></div>
+            <a href="">购物车</a>
+        </div>
+    </div>
+
+<script>
+    function demo(){
+        /*   获取视口宽度*/
+        var vpWidth=window.innerWidth;
+        /* (视口的宽度/320)*html元素的字体大小*/
+        var newVpWidth=(vpWidth/320)*100;
+        document.documentElement.style.fontSize=newVpWidth+"px";
+    }
+    demo()
+    /*当浏览器视口大小改变的时候触发*/
+    var resize;
+    window.onresize=function(){
+        clearTimeout(resize);
+        resize=setTimeout(demo,300);
+    }
+</script>
+</body>
+</html>
